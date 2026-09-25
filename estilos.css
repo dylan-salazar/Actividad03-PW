@@ -1,0 +1,90 @@
+:root {
+  --color-principal: #245c4a;
+  --color-secundario: #e8f0ec;
+  --fuente-base: 16px;
+  --espaciado: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: var(--fuente-base);
+  color: #222;
+}
+
+header {
+  padding: var(--espaciado);
+  background-color: var(--color-principal);
+  color: white;
+}
+
+nav a {
+  margin-right: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: var(--espaciado);
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: var(--espaciado);
+  border: 1px solid #999;
+  text-align: left;
+}
+
+tbody tr:nth-child(even) {
+  background-color: var(--color-secundario);
+}
+
+form label,
+form input,
+form select {
+  display: block;
+  margin-bottom: var(--espaciado);
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: var(--espaciado);
+  border: 1px solid #999;
+}
+
+form input:focus,
+form select:focus {
+  outline: 2px solid var(--color-principal);
+}
+
+button {
+  padding: var(--espaciado);
+  background-color: var(--color-principal);
+  color: white;
+  border: none;
+}
+
+@media (max-width: 767px) {
+  header {
+    text-align: center;
+  }
+
+  th, td {
+    padding: 6px;
+  }
+}
