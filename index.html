@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Actividades externas</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header>
+    <h1>Actividades externas</h1>
+    <nav>
+      <a href="#actividades">Actividades</a>
+      <a href="#inscripcion">Inscripción</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="actividades">
+      <h2>Próximas actividades</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Actividad</th>
+            <th>Fecha</th>
+            <th>Lugar</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Visita al museo</td>
+            <td>12 de octubre</td>
+            <td>Museo de Ciencias</td>
+          </tr>
+          <tr>
+            <td>Taller de huerto</td>
+            <td>19 de octubre</td>
+            <td>Parque Central</td>
+          </tr>
+          <tr>
+            <td>Ruta histórica</td>
+            <td>26 de octubre</td>
+            <td>Centro histórico</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="inscripcion">
+      <h2>Formulario de inscripción</h2>
+      <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre">
+
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" name="correo">
+
+        <label for="actividad">Actividad:</label>
+        <select id="actividad" name="actividad">
+          <option>Visita al museo</option>
+          <option>Taller de huerto</option>
+          <option>Ruta histórica</option>
+        </select>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
